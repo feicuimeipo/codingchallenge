@@ -9,8 +9,6 @@ S3_FILE_CONF = Config.read_config_s3()
 
 class S3Helper(object):
     def __init__(self):
-        self.access_key = S3_FILE_CONF.get("ACCESS-KEY")
-        self.secret_key = S3_FILE_CONF.get("SECRET-KEY")
         self.region_name = S3_FILE_CONF.get("REGION-NAME")
         self.bucket_name = S3_FILE_CONF.get("BUCKET-NAME")
         self.endpoint_url = S3_FILE_CONF.get("ENDPOINT-URL")
@@ -19,16 +17,7 @@ class S3Helper(object):
         # 连接s3
         self.boto3 = boto3.resource(
             service_name='s3',
-            endpoint_url=self.endpoint_url,
-            aws_access_key_id=self.access_key,
-            aws_secret_access_key=self.secret_key
-        )
-
-        self.client = boto3.client(
-            service_name='s3',
-            region_name=self.region_name,
-            aws_access_key_id=self.access_key,
-            aws_secret_access_key=self.secret_key,
+            endpoint_url=self.endpoint_url
         )
 
     def download_file_s3(self, bucket_name, input_file_path, input_text, output_file_name):
