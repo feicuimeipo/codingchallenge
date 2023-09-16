@@ -58,10 +58,9 @@ flask run
   满足
 
 # Bonus
-1. ● Early submission is a big plus ： 我原来擅长Java，熟练go, 这个小项目我想让他变有更有意义，所以用python做了新尝试，花费了一些时间：Python + Flask
+1. ● Early submission is a big plus ： 我原来擅长Java，熟练go, 这个小项目我想让他变有更有意, 所以用python做了新尝试，花费了一些时间：Python + Flask
 2. ● Use AWS Cognito as API-Gateway Authorizer： Cognito在香港区无法使用（Amazon Cognito 是 Web 和移动应用程序的身份平台。）
 3. ● Your frontend code is hosted in S3 or Amplify (not backend)：时间关系没有使用 (S3和Amplify: 可用于加速，托管前端代码)
 4. ● Use Flowbite TailwindCSS and ReactJS for Responsive UI： 用了React + Antd
    1). Flowbite是建立在 Tailwind CSS 框架之上的最受欢迎的组件库,具有下拉、导航栏、模式等交互元素
    2). Tailwind CSS 是一个功能性实用性很的的 CSS
-
