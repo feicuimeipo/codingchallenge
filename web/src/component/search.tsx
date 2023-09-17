@@ -10,7 +10,7 @@ function Search() {
             return false
         }
         getFile(values.fileId).then((data) => {
-            console.log("SUCCESS = " + data)
+            console.log("SUCCESS = " + data.data)
             setResult(data.data)
             message.success(data.data)
         }).catch((err) =>{

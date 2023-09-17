@@ -4,6 +4,11 @@
 *.d.ts
 node_modules
 
+*.tar
+*.tar.gz
+*.zip
+
+
 # CDK asset staging directory
 .cdk.staging
 cdk.out

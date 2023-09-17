@@ -47,9 +47,15 @@ export class AutocdkStack extends cdk.Stack {
         ec2.Port.tcp(22),
         "allow public ssh access"
     );
+        mySecurityGroup.addIngressRule(
+        //ec2.Peer.ipv4(cidrIp),
+        ec2.Peer.anyIpv4(),
+        ec2.Port.tcp(5000),
+        "allow public ssh access"
+    );
       let ec2Instance = new ec2.CfnInstance(this, 'myInstance', {
           imageId: new ec2.AmazonLinuxImage().getImage(this).imageId,
-          instanceType: new ec2.InstanceType('t3.small').toString(),
+          instanceType: new ec2.InstanceType('t3.micro').toString(),
           networkInterfaces: [{
               associatePublicIpAddress: true,
               deviceIndex: '0',

@@ -16,4 +16,4 @@ gunicorn --workers=2 app:app
 #pipenv shell
 #flask run
 
-curl http://localhost:5000/file/zrlAsIeah24JqJrOOyKh7
+

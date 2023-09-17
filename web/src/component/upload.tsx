@@ -8,7 +8,6 @@ function FileUpload() {
     const [inputFile,setInputFile] = useState([""])
 
     const onFinish = async (values: any) => {
-       //values.event.preventDefault();
         if (!values.upload){
             return false
         }

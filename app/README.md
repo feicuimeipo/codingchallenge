@@ -17,6 +17,7 @@ git clone https://github.com/feicuimeipo/codingchallenge.git
 1. web: react写的前端人
 2. app: 后台实现
 3. cdk: 创建与销毁虚拟机以及一些操作shell
+4. lambda: 任务2中的保存dynamodb的代码
 ```
 
 ### 可改进的部分
