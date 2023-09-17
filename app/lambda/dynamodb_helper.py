@@ -16,12 +16,9 @@ class DynamoDBHelper(object):
         try:
             table.put_item(
                 Item={
-                    'id': 'abc',
-                    'input_tex': 'def',
-                    'input_file_path': 'sh'
-                    # 'id': item["id"],
-                    # 'input_tex': item["input_text"],
-                    # 'input_file_path': item["input_file_path"]
+                    'id': item["id"],
+                    'input_tex': item["input_text"],
+                    'input_file_path': item["input_file_path"]
                 }
             )
             return '200'
